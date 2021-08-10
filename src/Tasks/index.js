@@ -1,25 +1,28 @@
 import "./style.css";
 
 const Tasks = (props) => (
-    <ul className="list">
+    <ul className="tasks">
         {props.tasks.map(task => (
-            <li key={task.id}
-                className={`item ${(task.done && props.hideDones) ? "item__hidden" : ""}`}>
-
-                <button className={`button button__toggleDone`}>
-                    {task.done ? "✔" : ""}
+            <li
+                className={`tasks__item ${task.done && props.hideDone ? "tasks__item--hidden" : ""}`}>
+                <button
+                    className="tasks__button tasks__button--toggleDone"
+                    onClick={() => props.toggleTaskDone(task.id)}
+                >
+                    {task.done ? "✓" : ""}
                 </button>
-
-                <span className={`content ${task.done ? " content__done" : ""}`}>
+                <span className={`${task.done ? "tasks__content--done" : ""}`}>
                     {task.content}
                 </span>
-
-                <button className="button button__remove">
+                <button
+                    className="tasks__button tasks__button--remove"
+                    onClick={() => props.removeTask(task.id)}
+                >
                     🗑
                 </button>
             </li>
         ))}
-    </ul >
+    </ul>
 );
 
 export default Tasks; 

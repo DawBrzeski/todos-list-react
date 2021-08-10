@@ -1,60 +1,59 @@
-.list {
-    list-style: none;
-    padding: 0;
+.tasks {
     margin: 0;
-}
-
-.item {
+    padding: 20px;
+    list-style: none;
+  }
+  
+  .tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
-}
-
-.item__hidden {
+  }
+  
+  .tasks__item--hidden {
     display: none;
-}
-
-.content {
-    word-break: break-word;
-}
-
-.content__done {
+  }
+  
+  .tasks__content--done {
     text-decoration: line-through;
-}
-
-.button {
+  }
+  
+  
+  
+  .tasks__button {
     border: none;
-    color: white;
-    width: 30px;
     height: 30px;
+    width: 30px;
+    color: white;
     padding: 0;
     cursor: pointer;
-    transition: 0.5s linear;
-}
-
-.button__toggleDone {
-    background-color: hsl(120, 100%, 25%);
-}
-
-.button__toggleDone:hover {
-    background-color: hsl(120, 100%, 35%);
-}
-
-.button__toggleDone:active {
-    background-color: hsl(120, 100%, 40%);
-}
-
-.button__remove {
-    background-color: hsl(0, 68%, 42%);
-}
-
-.button__remove:hover {
-    background-color: hsl(0, 68%, 52%);
-}
-
-.button__remove:active {
-    background-color: hsl(0, 68%, 57%);
-}
+  }
+  
+  .tasks__button--toggleDone {
+    background-color: hsl(120, 62%, 37%);
+  }
+  
+  .tasks__button--toggleDone:hover {
+    background-color: hsl(120, 62%, 45%);
+    transition: 1s;
+  }
+  
+  .tasks__button--toggleDone:active {
+    background-color: hsl(120, 62%, 50%);
+  }
+  
+  .tasks__button--remove {
+    background-color: red;
+  }
+  
+  .tasks__button--remove:hover {
+    background-color: hsl(0, 100%, 70%);
+    transition: 1s;
+  }
+  
+  .tasks__button--remove:active {
+    background-color: hsl(0, 100%, 80%);
+  }
