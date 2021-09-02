@@ -2,5 +2,5 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
-padding-left:20px;
+padding-left:18px;
 `;
