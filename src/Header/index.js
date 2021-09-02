@@ -1,8 +1,9 @@
+import { Wrapper } from "./styled";
 
 const Header = ({title}) => (
-    <header>
+    <Wrapper>
     <h1>{title}</h1>
-  </header>
+  </Wrapper>
 );
 
 export default Header; 
