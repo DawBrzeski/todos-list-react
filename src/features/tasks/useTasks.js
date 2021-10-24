@@ -47,7 +47,7 @@ export const useTasks = () => {
         tasks,
         removeTask,
         toggleTaskDone,
-        setTasks,
+        setAllDone,
         addNewTask,
     };
 };
