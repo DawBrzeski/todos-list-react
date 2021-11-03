@@ -20,7 +20,6 @@ const Buttons = () => {
 
     return (
         <Wrapper>
-            <FetchExampledTasksButton />
             {!areTasksEmpty > 0 && (
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}
