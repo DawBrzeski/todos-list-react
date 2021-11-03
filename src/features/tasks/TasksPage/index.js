@@ -1,4 +1,3 @@
-
 import Form from "../TasksPage/Form";
 import TaskList from "../TasksPage/TaskList";
 import Buttons from "../TasksPage/Buttons";
@@ -6,9 +5,6 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
-
-
-
 
 
 

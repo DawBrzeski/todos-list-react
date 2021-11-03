@@ -1,38 +1,30 @@
 import TasksPage from "./features/tasks/TasksPage"
-import { HashRouter, Link, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import AuthorPage from "./features/author/AuthorPage";
 import TaskPage from "./features/tasks/TaskPage"
-import { StyledNavLink } from "./styled";
+import { toAuthor, toTask, toTasks } from "./routes";
+import Navigation from "./Navigation";
 
 
-export default () => (
-    <HashRouter basename="todos-list-react">
-        <nav>
-            <ul>
-                <li>
-                    <StyledNavLink to="/zadania"> zadania
-                    </StyledNavLink>
-                </li>
-                <li>
-                    <StyledNavLink to="/autor"> O autorze
-                    </StyledNavLink>
-                </li>
-            </ul>
+const App = () => (
+    <HashRouter>
+        <Navigation></Navigation>
             <Switch>
-                <Route path="/zadania/:id">
+                <Route path={toTask()}>
                     <TaskPage />
                 </Route>
-                <Route path="/zadania">
+                <Route path={toTasks()}>
                     <TasksPage />
                 </Route>
-                <Route path="/autor">
+                <Route path={toAuthor()}>
                     <AuthorPage />
                 </Route>
-                <Route path="/">
-                    <Redirect to="/zadania" />
+                <Route>
+                    <Redirect to={toTasks()} />
                 </Route>
             </Switch>
-        </nav>
+        
     </HashRouter>
 
 )
+export default App; 
