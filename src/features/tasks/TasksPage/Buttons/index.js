@@ -7,7 +7,6 @@ import {
     selectHideDone,
     selectIsEveryTaskDone,
 } from "../../tasksSlice";
-import FetchExampledTasksButton from "../FetchExampledTasksButton";
 import { Wrapper, Button } from "./styled";
 
 
@@ -24,7 +23,7 @@ const Buttons = () => {
                 <>
                     <Button onClick={() => dispatch(toggleHideDone())}
                     >
-                        {hideDone ? "Pokaz" : "Ukryj"} ukończone
+                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </Button>
                     <Button
                         onClick={() => dispatch(setAllDone())}
