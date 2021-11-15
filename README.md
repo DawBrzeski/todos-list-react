@@ -1,3 +1,31 @@
+# TASKER - TO DO LIST MANAGMENT
+**LIVE LINK:** [https://dawbrzeski.github.io/todos-list-react](https://dawbrzeski.github.io/todos-list-react)
+## DESCRIPTION
+
+To Do List app 
+
+### TECHNOLOGIES USED:
+
+- React
+- creat-react-app
+- Redux with react-redux,
+- Redux Saga,
+- React Router
+- HTML
+- CSS
+- JavaScript ES6+
+- Styled Components
+- npm
+- localstorage
+
+### PREVIEW:
+
+![usage-gif](./src/images/readme/todos.gif)
+
+### AUTHOR
+[Dawid Brzeski](https://github.com/DawBrzeski). 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
